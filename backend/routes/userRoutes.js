@@ -1,5 +1,11 @@
 import express from 'express';
-import { authUser, registerUser, logoutUser, getUserProfile, updateUserProfile } from '../controllers/userControllers.js';
+import {
+  authUser,
+  registerUser,
+  logoutUser,
+  getUserProfile,
+  updateUserProfile,
+} from '../controllers/userControllers.js';
 const router = express.Router();
 
 router.post('/', registerUser);
